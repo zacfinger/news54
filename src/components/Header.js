@@ -1,5 +1,5 @@
 import React from 'react'
-import Company_Logo_54News from '../../img/Company_Logo_54News.png'
+import Company_Logo_54News from '../img/Company_Logo_54News.png'
 
 const Header = () => {
 	return (

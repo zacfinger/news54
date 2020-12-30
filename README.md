@@ -11,3 +11,5 @@ The following resources have been helpful:
 * https://stackoverflow.com/questions/40037657/how-to-include-bootstrap-css-and-js-in-reactjs-app
 * https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e
 * https://stackoverflow.com/questions/17516810/how-to-assign-a-domain-name-to-node-js-server
+* https://www.youtube.com/watch?v=fFNXWinbgro
+* https://www.tutorialspoint.com/expressjs/expressjs_url_building.htm

@@ -1,34 +1,21 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import Header from './components/ui/Header'
-import StoryGrid from './components/stories/StoryGrid'
+import React, { Component, Fragment } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Stories from './components/Stories';
+import StoryPage from './components/StoryPage';
 import config from './config'
 import './App.css';
 
 const App = () => {
 
-  const [items, setItems] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-	const fetchItems = async () => {
-		const result = await axios(`http://` + config.domain + `/api/`)
-
-		console.log(result.data)
-
-		setItems(result.data)
-		setIsLoading(false)
-
-	}
-
-	fetchItems()
-  }, [])
-
   return (
-    <div className="container">
-    	<Header />
-	<StoryGrid isLoading={isLoading} items={items} />
-    </div>
+	  <Router>
+    		<Fragment>
+    			<Header />
+	  		<Route exact path="/" component={Stories} />
+			<Route exact path="/story/:guid" component={StoryPage} />
+    		</Fragment>
+	  </Router>
   );
 }
 
