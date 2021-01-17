@@ -6,17 +6,55 @@ import StoryPage from './components/StoryPage';
 import config from './config'
 import './App.css';
 
-const App = () => {
+export default class App extends Component {
 
-  return (
-	  <Router>
-    		<Fragment>
-    			<Header />
-	  		<Route exact path="/" component={Stories} />
-			<Route exact path="/story/:guid" component={StoryPage} />
-    		</Fragment>
-	  </Router>
-  );
+	constructor(props) {
+    		super(props)
+    		this.state = { matches: window.matchMedia("(min-width: 768px)").matches };
+		this.resizeHeaderOnScroll = this.resizeHeaderOnScroll.bind(this);
+  	}
+
+	componentDidMount() {
+		window.addEventListener("scroll", this.resizeHeaderOnScroll);
+
+		const handler = e => this.setState({matches: e.matches});
+    		window.matchMedia("(min-width: 768px)").addListener(handler);
+	}
+
+	// Resize header on scroll: https://stackoverflow.com/questions/50520455/resize-header-onscroll-react
+	// Media query in React: https://stackoverflow.com/questions/54491645/media-query-syntax-for-reactjs
+	// Calling this.state in resizeHeaderOnScroll(): https://stackoverflow.com/questions/45998744/react-this-state-is-undefined
+	resizeHeaderOnScroll() {
+		const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+			shrinkOn = 62,
+			headerEl = document.getElementById("header"),
+			pageEl = document.getElementById("page");
+		
+		if(this.state.matches){
+
+			if (distanceY > shrinkOn) {
+				headerEl.classList.add("CollapsibleHeader-collapse");
+				pageEl.classList.remove("pt-0");
+				pageEl.classList.add("pt-md-62");
+			} else {
+				headerEl.classList.remove("CollapsibleHeader-collapse");
+				pageEl.classList.add("pt-0");
+				pageEl.classList.remove("pt-md-62");
+			}
+		}
+	}
+	render() {
+		return(
+	  		<div id="page">
+				<Router>
+    					<Header />
+	  				<div className="PageBody container">
+						<Route exact path="/" component={Stories} />
+						<Route exact path="/story/:guid" component={StoryPage} />
+					</div>
+	  			</Router>
+	  		</div>
+  		);
+	}
 }
 
-export default App;
