@@ -14,6 +14,39 @@
 	background-color: rgb(221, 221, 221);
 }
 
+#CurrentConditionsAtAGlanceDetail {
+	float: right;
+}
+
+.CurrentConditionsAtAGlanceDetail-wrapper,
+#CurrentConditionsAtAGlanceDetail-weatherInfo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#CurrentConditionsAtAGlanceDetail-wrapper-cityName {
+	width: 150px;
+	font-weight: 700;
+}
+
+.CurrentConditionsAtAGlanceDetail-wrapper-sky {
+	font-weight: 400;
+}
+
+#CurrentConditionsAtAGlanceDetail-temp {
+	font-size: 36px;
+	vertical-align: middle;
+	font-weight: 700;
+}
+
+#weather-icon {
+	background-size: contain;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 @media (max-width: 768px){
 	#header {
 		position: static !important;
@@ -24,8 +57,16 @@
 		padding-left: 0px !important;
 	}
 
-	#header img {
+	#CollapsibleHeader-logo {
+		padding-right: 0px;
+	}
+
+	#CollapsibleHeader-logo img {
 		max-height: 50px !important;
+	}
+
+	#HeaderMenu {
+		padding-left: 0px;
 	}
 
 	.PageBody {
@@ -34,5 +75,23 @@
 
 	.pt-md-62 {
 		padding-top: 0px;
+	}
+
+	.CurrentConditionsAtAGlanceDetail-wrapper {
+		display: inherit;
+	}
+
+	#CurrentConditionsAtAGlanceDetail-wrapper-cityName {
+		width: 115px;
+		font-size: 20px;
+	}
+
+	#CurrentConditionsAtAGlanceDetail-temp {
+		font-size:24px;
+	}
+
+	#weather-icon {
+		width: 24px;
+		height: 24px;
 	}
 }
