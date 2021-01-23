@@ -3,6 +3,7 @@
 This is a frontend for the [news-scraper](https://github.com/zacfinger/news-scraper).
 
 The following resources have been helpful:
+* https://stackoverflow.com/questions/39195687/setting-a-backgroundimage-with-react-inline-styles
 * https://www.youtube.com/watch?v=ydDUm1yPZs0
 * https://blog.logrocket.com/how-to-use-bootstrap-with-react-a354715d1121/
 * https://medium.com/swlh/making-a-collapsible-sticky-header-animations-with-react-native-6ad7763875c3
