@@ -13,7 +13,7 @@ const Header = () => {
 				</div>
 				<div id="HeaderMenu" className="col-8 col-lg-9">
 					<TopHeader />
-					<div className="d-md-none d-lg-block" id="CollapsibleHeader-HeaderMenu">
+					<div className="CollapsibleHeader-HeaderMenu" id="CollapsibleHeader-HeaderMenu">
 						<nav class="navbar navbar-expand-md navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ const Header = () => {
 		<div class="collapse navbar-collapse">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Top Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Features</a>

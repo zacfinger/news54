@@ -3,6 +3,8 @@
 This is a frontend for the [news-scraper](https://github.com/zacfinger/news-scraper).
 
 The following resources have been helpful:
+* https://www.codeply.com/go/IETSah3bFG/bootstrap-4-collapse-navbar-overflow-to-dropdown
+* https://stackoverflow.com/questions/38518278/how-to-use-jquery-with-reactjs
 * https://stackoverflow.com/questions/39195687/setting-a-backgroundimage-with-react-inline-styles
 * https://www.youtube.com/watch?v=ydDUm1yPZs0
 * https://blog.logrocket.com/how-to-use-bootstrap-with-react-a354715d1121/

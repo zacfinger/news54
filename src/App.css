@@ -47,15 +47,29 @@
 	vertical-align: middle;
 }
 
-#CollapsibleHeader-topHeader,
-#CollapsibleHeader-HeaderMenu {
+.CollapsibleHeader-topHeader {
 	width: 100%;
 	float: right;
 }
 
-@media (max-width: 992px){
+.CollapsibleHeader-HeaderMenu {
+	width: 100%;
+	float: right;
+}
+
+@media (max-width: 991.98px){
 	.PageBody {
 		margin-top: 200px;
+	}
+
+	.CollapsibleHeader-HeaderMenu {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	.CollapsibleHeader-HeaderMenu {
+		display: block;
 	}
 }
 
@@ -110,12 +124,14 @@
 		height: 24px;
 	}
 
-	#CollapsibleHeader-topHeader {
-		width: calc(14vw) !important;
+	.CollapsibleHeader-topHeader {
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		width: calc(14vw);
 	}
 
-	#CollapsibleHeader-topHeader,
-	#CollapsibleHeader-HeaderMenu {
+	.CollapsibleHeader-HeaderMenu {
 		display: inline-block;
 		vertical-align: top;
 		float: none;

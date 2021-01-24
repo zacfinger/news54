@@ -2,7 +2,7 @@ import React, { Fragment} from 'react'
 
 const TopHeader = () => {
 	return (
-		<div id="CollapsibleHeader-topHeader">
+		<div id="CollapsibleHeader-topHeader" className="CollapsibleHeader-topHeader">
 			<div id="CurrentConditionsAtAGlanceDetail">
 		    		<div className="CurrentConditionsAtAGlanceDetail-wrapper">
 				    <div id="CurrentConditionsAtAGlanceDetail-wrapper-cityName">Tucson</div>
