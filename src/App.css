@@ -53,11 +53,16 @@
 	float: right;
 }
 
-.CollapsibleHeader-topHeader--collapse,
-.CollapsibleHeder-HeaderMenu--collapse { 
+.CollapsibleHeader-topHeader--collapse { 
 	display: inline-block;
 	width: auto;
 	float: right;
+}
+
+.CollapsibleHeader-HeaderMenu--collapse {
+	float: none;
+	display: block;
+	width: auto;
 }
 
 .CollapsibleHeader-bottomHeader--collapse {
