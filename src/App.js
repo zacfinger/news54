@@ -28,18 +28,42 @@ export default class App extends Component {
 		const distanceY = window.pageYOffset || document.documentElement.scrollTop,
 			shrinkOn = 62,
 			headerEl = document.getElementById("header"),
-			pageEl = document.getElementById("page");
+			pageEl = document.getElementById("page"),
+			topHeaderEl = document.getElementById("CollapsibleHeader-topHeader"),
+			headerMenuEl = document.getElementById("CollapsibleHeader-HeaderMenu"),
+			bottomHeaderEl = document.getElementById("CollapsibleHeader-bottomHeader");
 		
 		if(this.state.matches){
 
 			if (distanceY > shrinkOn) {
+				// User scrolled below 62px
 				headerEl.classList.add("CollapsibleHeader-collapse");
+				
 				pageEl.classList.remove("pt-0");
 				pageEl.classList.add("pt-md-62");
+				
+				topHeaderEl.classList.remove("CollapsibleHeader-topHeader");
+				topHeaderEl.classList.add("CollapsibleHeader-topHeader--collapse");
+
+				headerMenuEl.classList.remove("CollapsibleHeader-HeaderMenu");
+				headerMenuEl.classList.add("CollapsibleHeader-HeaderMenu--collapse");
+
+				bottomHeaderEl.classList.add("CollapsibleHeader-bottomHeader--collapse");
+			
 			} else {
+				// User scrolled to top
 				headerEl.classList.remove("CollapsibleHeader-collapse");
+				
 				pageEl.classList.add("pt-0");
 				pageEl.classList.remove("pt-md-62");
+
+				topHeaderEl.classList.remove("CollapsibleHeader-topHeader--collapse");
+				topHeaderEl.classList.add("CollapsibleHeader-topHeader");
+
+				headerMenuEl.classList.remove("CollapsibleHeader-HeaderMenu--collapse");
+				headerMenuEl.classList.add("CollapsibleHeader-HeaderMenu");
+
+				bottomHeaderEl.classList.remove("CollapsibleHeader-bottomHeader--collapse");
 			}
 		}
 	}

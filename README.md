@@ -3,6 +3,7 @@
 This is a frontend for the [news-scraper](https://github.com/zacfinger/news-scraper).
 
 The following resources have been helpful:
+* https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color
 * https://www.codeply.com/go/IETSah3bFG/bootstrap-4-collapse-navbar-overflow-to-dropdown
 * https://stackoverflow.com/questions/38518278/how-to-use-jquery-with-reactjs
 * https://stackoverflow.com/questions/39195687/setting-a-backgroundimage-with-react-inline-styles
