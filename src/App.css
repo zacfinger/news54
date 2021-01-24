@@ -47,14 +47,28 @@
 	vertical-align: middle;
 }
 
+#CollapsibleHeader-topHeader,
+#CollapsibleHeader-HeaderMenu {
+	width: 100%;
+	float: right;
+}
+
+@media (max-width: 992px){
+	.PageBody {
+		margin-top: 200px;
+	}
+}
+
 @media (max-width: 768px){
 	#header {
 		position: static !important;
 		padding-left: 0px !important;
+		padding-right: 0px !important;
 	}
 
-	#header .container {
+	#header .container-md {
 		padding-left: 0px !important;
+		padding-right: 0px !important;
 	}
 
 	#CollapsibleHeader-logo {
@@ -67,6 +81,7 @@
 
 	#HeaderMenu {
 		padding-left: 0px;
+		text-align: right;
 	}
 
 	.PageBody {
@@ -93,5 +108,17 @@
 	#weather-icon {
 		width: 24px;
 		height: 24px;
+	}
+
+	#CollapsibleHeader-topHeader {
+		width: calc(14vw) !important;
+	}
+
+	#CollapsibleHeader-topHeader,
+	#CollapsibleHeader-HeaderMenu {
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		width: auto;
 	}
 }
