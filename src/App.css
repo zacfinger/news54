@@ -18,13 +18,17 @@
 	float: right;
 }
 
-.CurrentConditionsAtAGlanceDetail-wrapper,
+.CurrentConditionsAtAGlanceDetail-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 #CurrentConditionsAtAGlanceDetail-weatherInfo {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-#CurrentConditionsAtAGlanceDetail-wrapper-cityName {
+.CurrentConditionsAtAGlanceDetail-wrapper-cityName {
 	width: 150px;
 	font-weight: 700;
 }
@@ -33,18 +37,32 @@
 	font-weight: 400;
 }
 
-#CurrentConditionsAtAGlanceDetail-temp {
+.CurrentConditionsAtAGlanceDetail-temp {
 	font-size: 36px;
 	vertical-align: middle;
 	font-weight: 700;
 }
 
-#weather-icon {
+.CurrentConditionsAtAGlanceDetail-temp--condensed {
+	font-size: 24px;
+	vertical-align: middle;
+	font-weight: 700;
+}
+
+.weather-icon {
 	background-size: contain;
 	height: 50px;
 	width: 50px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.weather-icon--condensed {
+        background-size: contain;
+        height: 24px;
+        width: 24px;
+        display: inline-block;
+        vertical-align: middle;
 }
 
 .CollapsibleHeader-topHeader,
@@ -76,6 +94,17 @@
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.CurrentConditionsAtAGlanceDetail-wrapper--collapse {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.CurrentConditionsAtAGlanceDetail-wrapper-cityName--collapse {
+	width: 85px;
+	font-weight: 700;
 }
 
 @media (max-width: 991.98px){
@@ -131,16 +160,16 @@
 		display: inherit;
 	}
 
-	#CurrentConditionsAtAGlanceDetail-wrapper-cityName {
+	.CurrentConditionsAtAGlanceDetail-wrapper-cityName {
 		width: 115px;
 		font-size: 20px;
 	}
 
-	#CurrentConditionsAtAGlanceDetail-temp {
+	.CurrentConditionsAtAGlanceDetail-temp {
 		font-size:24px;
 	}
 
-	#weather-icon {
+	.weather-icon {
 		width: 24px;
 		height: 24px;
 	}

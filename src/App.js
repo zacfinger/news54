@@ -31,7 +31,11 @@ export default class App extends Component {
 			pageEl = document.getElementById("page"),
 			topHeaderEl = document.getElementById("CollapsibleHeader-topHeader"),
 			headerMenuEl = document.getElementById("CollapsibleHeader-HeaderMenu"),
-			bottomHeaderEl = document.getElementById("CollapsibleHeader-bottomHeader");
+			bottomHeaderEl = document.getElementById("CollapsibleHeader-bottomHeader"),
+			detailWrapperEl = document.getElementById("CurrentConditionsAtAGlanceDetail-wrapper"),
+			cityNameEl = document.getElementById("CurrentConditionsAtAGlanceDetail-wrapper-cityName"),
+			detailTemp = document.getElementById("CurrentConditionsAtAGlanceDetail-temp"),
+			weatherIcon = document.getElementById("weather-icon");
 		
 		if(this.state.matches){
 
@@ -49,6 +53,18 @@ export default class App extends Component {
 				headerMenuEl.classList.add("CollapsibleHeader-HeaderMenu--collapse");
 
 				bottomHeaderEl.classList.add("CollapsibleHeader-bottomHeader--collapse");
+
+				detailWrapperEl.classList.remove("CurrentConditionsAtAGlanceDetail-wrapper");
+				detailWrapperEl.classList.add("CurrentConditionsAtAGlanceDetail-wrapper--collapse");
+
+				cityNameEl.classList.remove("CurrentConditionsAtAGlanceDetail-wrapper-cityName");
+				cityNameEl.classList.add("CurrentConditionsAtAGlanceDetail-wrapper-cityName--collapse");
+
+				detailTemp.classList.remove("CurrentConditionsAtAGlanceDetail-temp");
+				detailTemp.classList.add("CurrentConditionsAtAGlanceDetail-temp--condensed");
+
+				weatherIcon.classList.remove("weather-icon");
+				weatherIcon.classList.add("weather-icon--condensed");
 			
 			} else {
 				// User scrolled to top
@@ -64,6 +80,18 @@ export default class App extends Component {
 				headerMenuEl.classList.add("CollapsibleHeader-HeaderMenu");
 
 				bottomHeaderEl.classList.remove("CollapsibleHeader-bottomHeader--collapse");
+
+				detailWrapperEl.classList.add("CurrentConditionsAtAGlanceDetail-wrapper");
+				detailWrapperEl.classList.remove("CurrentConditionsAtAGlanceDetail-wrapper--collapse");
+
+				cityNameEl.classList.add("CurrentConditionsAtAGlanceDetail-wrapper-cityName");
+                                cityNameEl.classList.remove("CurrentConditionsAtAGlanceDetail-wrapper-cityName--collapse");
+
+				detailTemp.classList.remove("CurrentConditionsAtAGlanceDetail-temp--condensed");
+				detailTemp.classList.add("CurrentConditionsAtAGlanceDetail-temp");
+
+				weatherIcon.classList.remove("weather-icon--condensed");
+				weatherIcon.classList.add("weather-icon");
 			}
 		}
 	}
