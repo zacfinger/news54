@@ -3,6 +3,10 @@
 This is a frontend for the [news-scraper](https://github.com/zacfinger/news-scraper).
 
 The following resources have been helpful:
+* https://stackoverflow.com/questions/45836381/how-do-i-position-text-on-the-bottom-of-an-image-overlay-in-a-card-in-bootstrap/45839526
+* https://stackoverflow.com/questions/40679613/how-to-skip-first-in-map-function
+* https://stackoverflow.com/questions/31336569/how-to-set-background-color-of-view-transparent-in-react-native
+* https://stackoverflow.com/questions/36209432/how-to-dynamically-add-a-class-to-manual-class-names
 * https://stackoverflow.com/questions/42586729/bootstrap-4-change-hamburger-toggler-color
 * https://www.codeply.com/go/IETSah3bFG/bootstrap-4-collapse-navbar-overflow-to-dropdown
 * https://stackoverflow.com/questions/38518278/how-to-use-jquery-with-reactjs

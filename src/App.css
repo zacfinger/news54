@@ -107,6 +107,20 @@
 	font-weight: 700;
 }
 
+.CardContainer {
+	display: inline-block;
+}
+
+.CardContainer-gutterSpacing--sm {
+	float: left;
+	padding: 4px;
+}
+
+.Card-textContainer {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
 @media (max-width: 991.98px){
 	.PageBody {
 		margin-top: 200px;

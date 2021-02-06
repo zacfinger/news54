@@ -101,8 +101,15 @@ export default class App extends Component {
 				<Router>
     					<Header />
 	  				<div className="PageBody container">
-						<Route exact path="/" component={Stories} />
-						<Route exact path="/story/:guid" component={StoryPage} />
+					    <div className="row">
+						<div className="col-12 col-lg-9">
+						    <Route exact path="/" component={Stories} />
+						    <Route exact path="/story/:guid" component={StoryPage} />
+						</div>
+						<div className="col-12 col-lg-3">
+							
+						</div>
+					    </div>
 					</div>
 	  			</Router>
 	  		</div>

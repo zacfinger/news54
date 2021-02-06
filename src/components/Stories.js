@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import StoryItem from './StoryItem';
 import axios from 'axios';
 import config from '../config'
@@ -22,15 +22,22 @@ export class Stories extends Component {
 		const { stories, isLoaded } = this.state;
 		if(isLoaded) {
 			return (
-				<div>
-					{ stories.map(story => (
-						<StoryItem key={story.guid} story={story} />
+				<Fragment>
+				    <div className="CardContainer">
+					<StoryItem key={stories[0].guid} story={stories[0]} isLg={true} />
+					<StoryItem key={stories[1].guid} story={stories[1]} isLg={false} />
+					<StoryItem key={stories[2].guid} story={stories[2]} isLg={false} />
+				    </div>
+				    <div className="CardContainer">
+					{ stories.slice(4).map(story => (
+						<StoryItem key={story.guid} story={story} isLg={false} />
 					)) }
-				</div>
+				    </div>
+				</Fragment>
 			);
 		}
 
-		return <h3>Loadng...</h3>;
+		return <h3>Loading...</h3>;
 	}
 }
 
