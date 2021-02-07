@@ -100,7 +100,7 @@ export default class App extends Component {
 	  		<div id="page">
 				<Router>
     					<Header />
-	  				<div className="PageBody container">
+	  				<div className="PageBody container-lg">
 					    <div className="row">
 						<div className="col-12 col-lg-9">
 						    <Route exact path="/" component={Stories} />
