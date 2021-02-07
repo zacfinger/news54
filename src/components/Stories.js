@@ -29,7 +29,7 @@ export class Stories extends Component {
 					<StoryItem key={stories[2].guid} story={stories[2]} isLg={false} />
 				    </div>
 				    <div className="CardContainer">
-					{ stories.slice(4).map(story => (
+					{ stories.slice(3).map(story => (
 						<StoryItem key={story.guid} story={story} isLg={false} />
 					)) }
 				    </div>
