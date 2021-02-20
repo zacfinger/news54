@@ -10,7 +10,7 @@ export class Stories extends Component {
 	}
 
 	componentDidMount() {
-		axios.get(`http://` + config.domain + `/api/`)
+		axios.get(`http://` + config.domain + `/api/stories`)
 		.then(res => this.setState({
 			stories: res.data,
 			isLoaded: true
