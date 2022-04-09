@@ -40,3 +40,9 @@ The following resources have been helpful:
 * https://www.cyberciti.biz/faq/how-to-open-firewall-port-on-ubuntu-linux-12-04-14-04-lts/
 * https://dev.to/xarala221/the-easiest-way-to-deploy-a-react-web-application-2l8a
 * https://stackoverflow.com/questions/39758136/render-html-string-as-real-html-in-a-react-component
+* https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+* https://serverfault.com/questions/527630/difference-in-sites-available-vs-sites-enabled-vs-conf-d-directories-nginx
+* https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04
+* https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04
+* https://www.sitepoint.com/configuring-nginx-ssl-node-js/
+* https://www.digitalocean.com/community/questions/configure-nginx-for-nodejs-backend-and-react-frontend-app
