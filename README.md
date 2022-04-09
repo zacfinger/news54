@@ -35,3 +35,8 @@ The following resources have been helpful:
 * https://stackoverflow.com/questions/17516810/how-to-assign-a-domain-name-to-node-js-server
 * https://www.youtube.com/watch?v=fFNXWinbgro
 * https://www.tutorialspoint.com/expressjs/expressjs_url_building.htm
+* https://www.pluralsight.com/guides/pull-and-build-a-react-app-created-via-create-react-app-from-github
+* https://stackoverflow.com/questions/12701259/how-to-make-a-node-js-application-run-permanently
+* https://www.cyberciti.biz/faq/how-to-open-firewall-port-on-ubuntu-linux-12-04-14-04-lts/
+* https://dev.to/xarala221/the-easiest-way-to-deploy-a-react-web-application-2l8a
+* https://stackoverflow.com/questions/39758136/render-html-string-as-real-html-in-a-react-component
